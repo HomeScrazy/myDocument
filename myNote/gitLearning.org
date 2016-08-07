@@ -1,0 +1,51 @@
+#+TITLE: Git Note
+#+AUTHOR: Holmes
+#+EMAIL: crazy_runcheng@163.com
+
+* Create Version Repository
+** create a folder and set it as a version repository
+#+BEGIN_SRC
+$ mkdir learngit
+$ cd learngit
+$ git init
+#+END_SRC
+when you see the next echo, the repository is create succfully
+#+BEGIN_SRC
+Initiallized empty Git repository in ...
+#+END_SRC
+** Add files to repository
+create a "readme.txt" in this folder or his sub folder,and add it to the repository
+#+BEGIN_SRC
+$ touch readme.txt
+#+END_SRC
+input two line in readme
+#+BEGIN_SRC
+Git is a Version control system.
+Git is free software
+#+END_SRC
+Now use *git add* command to add it
+
+Then use *git commit* command,tell git submit the file to repository
+#+BEGIN_SRC
+$ git commit -m "worte a readme file"
+[master (root-commit) cb926e7] wrote a readme file
+1 file changed, 2 insertions(+)
+ create mode 100644 readme.txt
+#+END_SRC
+* Git Command Summary
+** basic command
+#+CAPTION: basic command summary
+| command        | describe                   | comment                           |
+|----------------+----------------------------+-----------------------------------|
+| git init       | Initialized git repository |                                   |
+| git add <file> | add file to repository     | use git add . add all files       |
+| git commit     | submit the file u add      | git commit -m"<modify describe >" |
+** version control
+#+CAPTION: version control command
+| command          | decribe                   | comment                                    |
+|------------------+---------------------------+--------------------------------------------|
+| git status       | showing repository status | show the file which has been modified      |
+| git diff <file>  | show modification content |                                            |
+| git log          | display git log           | --pretty=oneline:just display one line     |
+| git reset --hard | version backward          | HEAD^:previous version;HEAD^^:pre-previous |
+| git reflog       | version option log        |                                            |
