@@ -42,10 +42,17 @@ $ git commit -m "worte a readme file"
 | git commit     | submit the file u add      | git commit -m"<modify describe >" |
 ** version control
 #+CAPTION: version control command
-| command          | decribe                   | comment                                    |
+| command          | describe                  | comment                                    |
 |------------------+---------------------------+--------------------------------------------|
 | git status       | showing repository status | show the file which has been modified      |
 | git diff <file>  | show modification content |                                            |
 | git log          | display git log           | --pretty=oneline:just display one line     |
 | git reset --hard | version backward          | HEAD^:previous version;HEAD^^:pre-previous |
 | git reflog       | version option log        |                                            |
+** remote repository
+#+CAPTION: remote control command
+| command                                                 | describe                  | comment |
+|---------------------------------------------------------+---------------------------+---------|
+| git remote add <remote repository name> git@ remote url | add remote repository     |         |
+| git push <repository> <branch>                          | push to remote repository |         |
+| git push -u <repository> <brach>                        | first push                |         |
