@@ -35,11 +35,14 @@ $ git commit -m "worte a readme file"
 * Git Command Summary
 ** basic command
 #+CAPTION: basic command summary
-| command        | describe                   | comment                           |
-|----------------+----------------------------+-----------------------------------|
-| git init       | Initialized git repository |                                   |
-| git add <file> | add file to repository     | use git add . add all files       |
-| git commit     | submit the file u add      | git commit -m"<modify describe >" |
+| command               | describe                                    | comment                           |
+|-----------------------+---------------------------------------------+-----------------------------------|
+| git init              | Initialized git repository                  |                                   |
+| git add <file>        | add file to buffer area                     | use git add . add all files       |
+| git commit            | submit the buffer                           | git commit -m"<modify describe >" |
+| git checkout          | drop the modify in work area                | git checkout --<file name>        |
+| git reset HEAD <file> | revocate add command  if you haven't commit |                                   |
+
 ** version control
 #+CAPTION: version control command
 | command          | describe                  | comment                                    |
